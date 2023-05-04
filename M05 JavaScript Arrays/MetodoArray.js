@@ -44,9 +44,9 @@ console.log(palabraArreglada);
 // .forEach para cada uno de los elementos hacer tal cosa y no puede realizar cambios
 // OPCION 1
 var numeros = [ 1, 2, 3, 4 ];
-numeros.forEach( (num) => { console.log(num) } );
-numeros.forEach((num) => {
-    if (num === 3)
+numeros.forEach( (num) => { console.log(num) } ); // Bota todo los elementos del array
+numeros.forEach((num) => { // Para cada elemento del arreglo
+    if (num === 3) //Solamente si el num es = 3 se manda a q se muestre en la consola.
     console.log(num);
 });
 
