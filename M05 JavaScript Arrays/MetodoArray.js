@@ -7,7 +7,7 @@ colores.pop(); // Elimina al ultimo del arreglo
 colores.shift(); // Elimina al primero del arreglo
 console.log(colores);
 
-// .includes SI CONTIENE EL PARAMETRO DENTRO DEL ARREGLO
+// .includes determina si un arreglo CONTIENE EL PARAMETRO DENTRO DEL ARREGLO
 var pintores = ['Picasso', 'Velázquez', 'Van Gogh', 'Dalí'];
 var existeDali = pintores.includes('Monet'); // Si contiene Dali dentro de pintores
 console.log(existeDali); // Bota un boolean true si esta dentro del arreglo or false si no esta
