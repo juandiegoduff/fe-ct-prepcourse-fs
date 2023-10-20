@@ -133,10 +133,8 @@ function diaDeLaSemana(numeroDeDia) {
    // Tu código:
    if (numeroDeDia === 1 || numeroDeDia === 7) {
       return "Es fin de semana";
-    } else if (numeroDeDia >= 2 && numeroDeDia <= 6) {
-      return "Es día laboral";
     } else {
-      return "Número de día no válido";
+      return "Es dia laboral";
     }
 }
 
@@ -226,16 +224,15 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
-   const resultados = [];
-  
-  for (let i = 1; i <= 10; i++) {
+   const resultados = [];  
+   for (let i = 1; i <= 10; i++) {
     num += 2;
     resultados.push(num);
 
     if (num === i) {
       return "Se interrumpió la ejecución";
     }
-  }
+   }
 
   return resultados;
 }
@@ -247,6 +244,18 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   const result = [];
+
+   for (let i = 0; i < 10; i++) {
+     if (i === 4) {
+       continue; 
+     }
+ 
+     num += 2;
+     result.push(num);
+   }
+ 
+   return result;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
