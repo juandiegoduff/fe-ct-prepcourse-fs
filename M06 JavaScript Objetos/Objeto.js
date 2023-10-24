@@ -70,3 +70,33 @@ var diferenciaNotaciones = function (pUno, pDos){
 diferenciaNotaciones('saludable', 'noSaludable');
 console.log (comidas);
 
+// HAS OWN PROPERTY DEVUELVE TRUE O FALSE SI EL OBJETO CONTIENE LA PROPIEDAD
+var libro = { autor: 'Borges', genero: 'Policial', año: 1990 };
+var tienePropiedad = libro.hasOwnProperty('autor');
+
+console.log(tienePropiedad);
+
+// KEYS DEVUELVE TODAS LAS PROPIEDADES DEL LIBRO
+var libro = { autor: 'Borges', genero: 'Policial', año: 1990 };
+var todasLasPropiedades = Object.keys(libro);
+
+console.log(todasLasPropiedades);
+
+// FOR IN RECORRE LAS VARIABLES DEL OBJETO
+var mundo = {continentes:7, paises:195,oceanos:5};
+for (let prop in mundo) {
+    console.log('Esta es la propiedad: ', prop); // MUESTRA LA PROPIEDAD DEL OBJETO A RECORRER
+    console.log('Este es el valor: ', mundo[prop]); // MUESTRA EL VALOR DE LA PROPIEDAD EN EL OBJETO RECORRIDo
+ }
+
+// NOS PERMITE CAMBIAR EL CONTEXTO DE LA PROPIEDAD EN LA QUE SE ESTA
+var mascota={
+    animal:'Perro',
+    raza:'Ovejero Aleman',
+    amistoso:true,
+    nombre:'Firulais',
+    info: function(){
+        console.log('Mi perro es un'+this.raza)
+    }
+};
+mascota.info();
